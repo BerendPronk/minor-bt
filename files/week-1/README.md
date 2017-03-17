@@ -12,7 +12,7 @@ However, the logo is still shown to the user.
 
 - The result page will look distorted without images, a placeholder image (svg / css) will take care of this distortion by setting a fixed height and providing feedback to the user about the image. When the images are loaded, they will replace the placeholder.
 
-![No images results](https://berendpronk.github.io/minor/assets/bt/no-images-result.png)
+![No images results](https://berendpronk.github.io/minor/assets/bt/no-images-results.png)
 
 ## Custom Fonts
 - App doesn't use icon fonts.
@@ -38,7 +38,7 @@ However, the logo is still shown to the user.
 - The splashscreen took a total of 12.7 seconds to load without any extra improvements done on performance (Tested on a 2G connection (150ms, 450kb/s, 150kb/s))  
 The stack of images is the culprit, since the DOM only takes 1.85 seconds to load.
 
-![2G connection splash](https://berendpronk.github.io/minor/assets/bt/2g-connection-splash.png)
+![2G connection splash](https://berendpronk.github.io/minor/assets/bt/2G-connection-splash.png)
 
 - The result page takes longer to load, since it requests larger images for preview images of the results. The rest of the DOM has already been loaded at this point.
 Not every image should be visible immediately. By lazyloading them, the loading of the results page can be improved.
