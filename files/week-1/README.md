@@ -9,6 +9,7 @@ These improvements could eventually be implemented in the app itself, for a bett
 However, the logo is still shown to the user.
 
 ![No images splash](https://berendpronk.github.io/minor/assets/bt/no-images-splash.png)
+![No images splash](https://berendpronk.github.io/minor/assets/bt/no-images-splash.png)
 
 - The result page will look distorted without images, a placeholder image (svg / css) will take care of this distortion by setting a fixed height and providing feedback to the user about the image. When the images are loaded, they will replace the placeholder.
 
