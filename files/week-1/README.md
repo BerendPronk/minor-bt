@@ -25,7 +25,7 @@ However, the logo is still shown to the user.
 - Content with an explanation of the app and it's usage should be loaded by default, and later be removed once the JavaScipt is loaded.
 - App is built with modules that rely on each other, removing one will result in the app not loading properly. By implementing a feature detection script, modules can be turned off, resulting in the app functioning without that specific module, instead of crashing altogether.
 
-![No JavaScript](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/no-javascript.png)
+![No JavaScript](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/no-javascript_fixed.png)
 
 - The addition of a `<noscript>` tag should provide the handful of users that deliberately disabled JavaScript with some feedback about the apps usage of JavaScript.
 
@@ -38,7 +38,7 @@ However, the logo is still shown to the user.
 - The splashscreen took a total of 12.7 seconds to load without any extra improvements done on performance (Tested on a 2G connection (150ms, 450kb/s, 150kb/s))  
 The stack of images is the culprit, since the DOM only takes 1.85 seconds to load.
 
-![2G connection splash](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/2G-connection-splash.png)
+![2G connection splash](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/2G-connection-splash_fixed.png)
 
 - The result page takes longer to load, since it requests larger images for preview images of the results. The rest of the DOM has already been loaded at this point.
 Not every image should be visible immediately. By lazyloading them, the loading of the results page can be improved.
