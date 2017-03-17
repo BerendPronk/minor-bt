@@ -32,7 +32,7 @@ However, the logo is still shown to the user.
 ## Colour
 - App uses a lot of different colours, with change in saturation. The only thing that would improve the overall experience, is increase the contrast of the `Verzenden` button some more from it's container.
 
-![Colour blindness test](https://berendpronk.github.io/minor/assets/bt/colour-blindness-test.png)
+![Colour blindness test](https://berendpronk.github.io/minor/assets/bt/colour-blindness-test.jpg)
 
 ## Internet connection
 - The splashscreen took a total of 12.7 seconds to load without any extra improvements done on performance (Tested on a 2G connection (150ms, 450kb/s, 150kb/s))  
