@@ -8,11 +8,11 @@ These improvements could eventually be implemented in the app itself, for a bett
 - When no images are able to load, or if the user has disabled images in his browser settings, the splash-screen will not show the decorative background.  
 However, the logo is still shown to the user.
 
-![No images splash](https://berendpronk.github.io/minor/assets/bt/no-images-splash.png)
+![No images splash](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/no-images-splash.png)
 
 - The result page will look distorted without images, a placeholder image (svg / css) will take care of this distortion by setting a fixed height and providing feedback to the user about the image. When the images are loaded, they will replace the placeholder.
 
-![No images results](https://berendpronk.github.io/minor/assets/bt/no-images-results.png)
+![No images results](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/no-images-results.png)
 
 ## Custom Fonts
 - App doesn't use icon fonts.
@@ -25,20 +25,20 @@ However, the logo is still shown to the user.
 - Content with an explanation of the app and it's usage should be loaded by default, and later be removed once the JavaScipt is loaded.
 - App is built with modules that rely on each other, removing one will result in the app not loading properly. By implementing a feature detection script, modules can be turned off, resulting in the app functioning without that specific module, instead of crashing altogether.
 
-![No JavaScript](https://berendpronk.github.io/minor/assets/bt/no-javascript.png)
+![No JavaScript](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/no-javascript.png)
 
 - The addition of a `<noscript>` tag should provide the handful of users that deliberately disabled JavaScript with some feedback about the apps usage of JavaScript.
 
 ## Colour
 - App uses a lot of different colours, with change in saturation. The only thing that would improve the overall experience, is increase the contrast of the `Verzenden` button some more from it's container.
 
-![Colour blindness test](https://berendpronk.github.io/minor/assets/bt/colour-blindness-test.jpg)
+![Colour blindness test](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/colour-blindness-test.jpg)
 
 ## Internet connection
 - The splashscreen took a total of 12.7 seconds to load without any extra improvements done on performance (Tested on a 2G connection (150ms, 450kb/s, 150kb/s))  
 The stack of images is the culprit, since the DOM only takes 1.85 seconds to load.
 
-![2G connection splash](https://berendpronk.github.io/minor/assets/bt/2G-connection-splash.png)
+![2G connection splash](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/2G-connection-splash.png)
 
 - The result page takes longer to load, since it requests larger images for preview images of the results. The rest of the DOM has already been loaded at this point.
 Not every image should be visible immediately. By lazyloading them, the loading of the results page can be improved.
@@ -52,7 +52,7 @@ This only takes about a second on a 2G connection.
 ## Browser storage
 - This site uses localStorage to store the set favourites. By disabling localStorage, or if the user's browser does not support this feature, the app will not work properly.
 
-![No localStorage](https://berendpronk.github.io/minor/assets/bt/no-localstorage.png)
+![No localStorage](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/no-localstorage.png)
 
 - There isn't any user database, with registration and login built in, yet. This will be a solution to our localStorage problem, since everything about adding and requesting favourite results could then be handled server-side.
 
