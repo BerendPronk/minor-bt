@@ -29,8 +29,6 @@ However, the SVG-logo is still shown to the user.
 
 ![No JavaScript](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/no-javascript_fixed.png)
 
-- The addition of a `<noscript>` tag should provide the handful of users that deliberately disabled JavaScript with some feedback about the apps usage of JavaScript.
-
 ## Colour
 - App uses a lot of different colours, with change in saturation. The only thing that would improve the overall experience, is to increase the contrast of the `Verzenden` button some more from it's container. (Example below of the Splashscreen's background does not alter per colour-blindness test, unfortunately).
 
@@ -65,8 +63,8 @@ This can be fixed by removing the `display none;` declaration on the `<input typ
 - App does not use tabindex attributes on elements.
 - `:hover` and `:focus` states are both styled.
 - The result page can be fully navigated by using the TAB-key.
-- When the return-key is pressed on a result, the tabindex should be reset, because the users is directed to a 'new' page, but is actually still in the same window of the Single Page Application.  
+- When the return-key is pressed on a result, the focus needs to be moved to the top of the detail page, because the users is directed to a 'new' page, but is actually still in the same window of the Single Page Application.  
 The removal of every result is also an option, but a new request should be done if the user decides to go back to the results page.
 - Same thing for the favourites page. The tabindex first wants to pass the list of results before going to the favourites page.
 - Screenreader for Chrome works surprisingly well, the first time tested. But when navigating the results list, it mentions the amount of list-items everytime the TAB-key is pressed.
-- Screenreader says the custom-element logo the application uses is `sexy` ;)
+- Screenreader says the custom-element logo the application uses is `sexy` ;) Probably should change it to just an ugly SVG-blob.
