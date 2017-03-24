@@ -249,6 +249,8 @@ When JavaScript is not loaded entirely, the user should still be able to get som
 
 For the complete code, [navigate to `javascript-fetch.html`](https://github.com/BerendPronk/minor-bt/blob/master/files/week-2/javascript-fetch.html) in this repository.
 
+***Note: The live version of this demo will not properly work in `Internet Explorer 7`, since it denies access to the API via HTTPS. If you clone this repo, or copy the contents of `javascript-fetch.html` to view the demo locally, it'll work just fine.***
+
 [JavaScript - `fetch()` demo](https://berendpronk.github.io/minor/bt/files/week-2/javascript-fetch/)
 
 ## JavaScript - `Array.prototype.includes`
