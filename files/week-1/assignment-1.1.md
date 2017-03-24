@@ -1,4 +1,4 @@
-# Breaking the web: An analysis of colour and JavaScript hazards
+# An analysis of colour and JavaScript hazards
 
 ## Colour
 
