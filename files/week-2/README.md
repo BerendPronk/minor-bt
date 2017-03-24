@@ -5,6 +5,8 @@ By detecting modern features, it's possible to set fallbacks for browsers that d
 
 All demos were tested in `Google Chrome 57`, `Opera`, `Mozilla Firefox` and `Internet Explorer 7`. Of course there are plenty of other browsers out there, but my philisophy is: "If it works in `Internet Explorer 7`, it (probably) works everywhere."
 
+---
+
 ## HTML - Attribute detection (`required`)
 Ever since HTML5, forms can have basic validation without the use of extra JavaScript. This is done by setting attributes in the input that need validation. These attributes include `required`, `min and max`, and `pattern`. I decided to create a fallback for the `required` attribute. This is not supported by `Internet Explorer 7`, and, because of a bug, `Apple Safari 10`.
 
@@ -34,6 +36,8 @@ if (!('required' in document.createElement('input'))) {
 For the complete code, [navigate to `html-attributes.html`](https://github.com/BerendPronk/minor-bt/blob/master/files/week-2/html-attributes.html) in this repository.
 
 [HTML - Attribute detection (`required`) demo](https://berendpronk.github.io/minor/bt/files/week-2/html-attributes/)
+
+---
 
 ## HTML - `output`
 The `<output>` tag is also a new addition to HTML5, so, again, older browsers will not support it. In order to show the output on the user's screen, it is necessary to create some other tag, like a `<p>`, or a `<span>`, and insert the desired output in it via JavaScript.
@@ -81,6 +85,8 @@ For the complete code, [navigate to `html-output.html`](https://github.com/Beren
 
 [HTML - `output` demo](https://berendpronk.github.io/minor/bt/files/week-2/html-output)
 
+---
+
 ## CSS - `filter` property
 Developers are now able to add all sorts of filters to DOM-elements, made possible by the CSS `filter` property. With a single declaration of CSS, an image, section or the entire page can be converted to black and white, have changes in contrast, or have a blurred layer on top.
 
@@ -115,6 +121,8 @@ In this specific demo, I've set a `greyscale(100%)` filter to a full-colour imag
 For the complete code, [navigate to `css-filter.html`](https://github.com/BerendPronk/minor-bt/blob/master/files/week-2/css-filter.html) in this repository.
 
 [CSS - `filter` property demo](https://berendpronk.github.io/minor/bt/files/week-2/css-filter)
+
+---
 
 ## CSS - `display: flex`
 A very useful way to create layout with CSS, is Flexbox. Activated by declaring `display: flex;` on the desired element, the layout can look very different with the addition of just a few properties like; `flex-wrap`, `flex-direction`, `justify-content` and `align-items`.
@@ -177,6 +185,8 @@ With the addition of `transform` properties, it'd be possible to do a lot more w
 For the complete code, [navigate to `css-flexbox.html`](https://github.com/BerendPronk/minor-bt/blob/master/files/week-2/css-flexbox.html) in this repository.
 
 [CSS - `display: flex` demo](https://berendpronk.github.io/minor/bt/files/week-2/css-flexbox/)
+
+---
 
 ## JavaScript - `fetch()`
 The Fetch API makes it easy to make calls to external API's. It is a modern version of the `XMLHttpRequest`, but is a `Promise` in itself. This feature is not supported by any version of `Internet Explorer`, but also not by `Apple Safari 10` and `iOS Safari 10.2`, the current versions by the time this readme was written.
@@ -252,6 +262,8 @@ For the complete code, [navigate to `javascript-fetch.html`](https://github.com/
 ***Note: The live version of this demo will not properly work in `Internet Explorer 7`, since it denies access to the API via HTTPS. If you clone this repo, or copy the contents of `javascript-fetch.html` to view the demo locally, it'll work just fine.***
 
 [JavaScript - `fetch()` demo](https://berendpronk.github.io/minor/bt/files/week-2/javascript-fetch/)
+
+---
 
 ## JavaScript - `Array.prototype.includes`
 A JavaScript functionality I use a lot, personally, is `Array.prototype.indexOf`. This checks the index of the requested item, in the selected array. When the selected array contains the item, it returns the index of the item. If the item is not contained inside the array, `-1` will be returned, which can later be converted to `false`.
