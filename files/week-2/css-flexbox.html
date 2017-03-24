@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Browser Technologies - Week 2: CSS Flexbox detection</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			height: 100%;
+			height: 100vh;
+			margin: 0;
+			padding: 10em;
+			background: #ffd65e;
+			background: -moz-linear-gradient(-45deg, #ffd65e 0%, #febf04 100%);
+			background: -webkit-linear-gradient(-45deg, #ffd65e 0%, #febf04 100%);
+			background: linear-gradient(135deg, #ffd65e 0%, #febf04 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 );
+		}
+		body > div {
+			width: 40em;
+			margin: 0 auto;
+			padding: 2em;
+			background-color: #fff;
+		}
+		h1 {
+			margin-bottom: 1em;
+			font-family: sans-serif;
+			font-size: 2em;
+			color: #333;
+		}
+		ul {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			text-align: justify;
+			width: 30em;
+			margin: 0 auto;
+			padding: 0;
+		}
+		ul li {
+			display: block;
+			float: right;
+			width: 25%;
+			margin-right: 12.5%;
+			text-align: center;
+			padding: 2em 0;
+			font-family: sans-serif;
+			font-size: 1.4em;
+			color: #fff;
+			list-style-type: none;
+			background-color: #d6a002;
+		}
+		ul li:first-child {
+			margin-right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>CSS - <code>display: flex</code></h1>
+		<ul>
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+		</ul>
+	</div>
+</body>
+</html>
