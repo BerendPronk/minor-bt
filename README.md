@@ -3,8 +3,11 @@ A repository that contains every file and document I used in the course 'Browser
 
 ## Week 1
 
+***Breaking the web: A analysis of colour and JavaScript hazards***   
+https://github.com/BerendPronk/minor-bt/blob/master/files/week-1/assignment-1.1.md
+
 ***Progressive Enhancement requests of the Funda Prototype***  
-https://github.com/BerendPronk/minor-bt/tree/master/files/week-1
+https://github.com/BerendPronk/minor-bt/blob/master/files/week-1/assignment-1.2.md
 
 ---
 
