@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Browser Technologies - Week 2: JavaScript Indexof detection</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			height: 100%;
+			height: 100vh;
+			margin: 0;
+			padding: 10em;
+			background: #ffd65e;
+			background: -moz-linear-gradient(-45deg, #ffd65e 0%, #febf04 100%);
+			background: -webkit-linear-gradient(-45deg, #ffd65e 0%, #febf04 100%);
+			background: linear-gradient(135deg, #ffd65e 0%, #febf04 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 );
+		}
+		body > div {
+			width: 40em;
+			margin: 0 auto;
+			padding: 2em;
+			background-color: #fff;
+		}
+		h1 {
+			margin-bottom: 1em;
+			font-family: sans-serif;
+			font-size: 2em;
+			color: #333;
+		}
+		h3 {
+			text-align: center;
+			font-family: sans-serif;
+			font-size: 1.4em;
+			color: #333;
+			margin-top: 0;
+		}
+		p {
+			font-family: sans-serif;
+		}
+		#input {
+			margin: 1em 0;
+			padding: .5em;
+			font-size: 1em;
+		}
+		#submit {
+			padding: .5em;
+			font-size: 1em;
+			color: #fff;
+			cursor: pointer;
+			border: none;
+			background-color: #d6a002;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>JavaScript - <code>Array.prototype.includes</code></h1>
+		<p>Array: <code>[1, 2, 3, 4, 5, 6, 7, 8];</code></p>
+
+		<input id="input" type="text">
+		<button id="submit">Check</button>
+
+		<p>Method: <code id="method"></code></p>
+		<p id="result">Can't check if item is inside array without JavaScript.</p>
+	</div>
+
+	<script>
+		var arr = [1, 2, 3, 4, 5, 6, 7, 8];
+		var input = document.getElementById('input');
+		var method = document.getElementById('method');
+		var result = document.getElementById('result');
+
+		if (Array.prototype.includes) {
+			method.innerText = 'Array.prototype.includes';
+			result.innerText = '';
+
+			input.onchange = function() {
+				if (arr.includes(Number(input.value))) {
+					result.innerText = input.value + " was found in the array!";
+					result.style.color = '#0c0';
+				} else {
+					result.innerText = input.value + " was not found in the array.";
+					result.style.color = '#c00';
+				}
+			}
+		} else if (Array.prototype.indexOf) {
+			method.innerText = 'Array.prototype.indexOf';
+			result.innerText = '';
+
+			input.onchange = function() {
+				if (checkItem(Number(input.value))) {
+					result.innerText = input.value + " was found in the array!";
+					result.style.color = '#0c0';
+				} else {
+					result.innerText = input.value + " was not found in the array.";
+					result.style.color = '#c00';
+				}
+			}
+
+			function checkItem(item) {
+				if (arr.indexOf(item) !== -1) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		} else {
+			method.innerText = 'for loop';
+			result.innerText = '';
+
+			input.onchange = function() {
+				if (checkItem(Number(input.value))) {
+					result.innerText = input.value + " was found in the array!";
+					result.style.color = '#0c0';
+				} else {
+					result.innerText = input.value + " was not found in the array.";
+					result.style.color = '#c00';
+				}
+			}
+
+			function checkItem(item) {
+				for (var i = 0; i < arr.length; i++) {
+					if (arr[i] === item) {
+						return true;
+					}
+					if (i === arr.length - 1) {
+						return false;
+					}
+				}
+			}
+		}
+
+	</script>
+</body>
+</html>
