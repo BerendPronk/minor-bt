@@ -271,7 +271,7 @@ A JavaScript functionality I use a lot, personally, is `Array.prototype.indexOf`
 Recently I discovered that there's also `Array.prototype.includes`, which returns either `true` or `false`, when an array is checked on it's contents. I thought it'd be nice to implement this feature in my future projects, but the support for it lacks in any version of `Internet Explorer`. Thats where `Array.prototype.indexOf` comes to the rescue, right? Wrong! The oldest versions of `Internet Explorer` do not support `Array.prototype.indexOf` either. Luckily there is another way to check if an item is contained inside an array, with a `for` loop.
 
 ```javascript
-// JavaSript
+// JavaScript
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8];
 var input = document.getElementById('input');
