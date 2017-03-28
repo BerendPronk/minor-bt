@@ -68,3 +68,13 @@ The removal of every result is also an option, but a new request should be done 
 - Same thing for the favourites page. The tabindex first wants to pass the list of results before going to the favourites page.
 - Screenreader for Chrome works surprisingly well, the first time tested. But when navigating the results list, it mentions the amount of list-items everytime the TAB-key is pressed.
 - Screenreader says the custom-element logo the application uses is `sexy` ;) Probably should change it to just an ugly SVG-blob.
+
+## Device laboratory
+![Device Lab](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/device-lab.jpg)
+
+- Only two devices worked as expected on this first test (besides a minor responsive-styling issue), the rest could not successfully parse the JavaScript. Those devices are: a Google Nexus 5 (with Chrome 51 as browser) and a Microsoft Surface (with Edge 14 as browser).
+- The rest of the devices were unable to view the app's logo, because it's a custom element. As mentioned before, a SVG-image will be a fine replacement for this element. Otherwise a PNG-image could be used.
+- The Fetch API is propably the culprit for the JavaScript crash. The application should work with XMLHttpRequests on the majority of the devices tested.
+- Searched were succesfully handled by the two devices which properly ran the application
+
+![Device Lab Results](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/device-lab_results.jpg)
