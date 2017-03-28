@@ -1,0 +1,19 @@
+{
+  "name": "bt-drag-n-drop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A progressively enhanced application to set up a grocery list",
+  "license": "MIT",
+  "repository": "https://github.com/BerendPronk/minor-bt",
+  "author": "Berend Pronk <berendpronk1994@gmail.com>",
+  "contributors": [
+    "Berend Pronk <berendpronk1994@gmail.com>"
+  ],
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  }
+}
