@@ -1,0 +1,177 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+	font-size: 1em;
+	color: #222;
+}
+.header {
+	width: 100%;
+	margin-bottom: 32px;
+	margin-bottom: 2rem;
+}
+.article {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	padding: 32px;
+}
+.section {
+	float: left;
+	width: 45%;
+	margin-bottom: 32px;
+	margin-bottom: 2rem;
+}
+@media (max-width: 40em) {
+	.section {
+		width: 100%;
+	}
+}
+
+form .section {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 100px;
+	padding: 8px;
+	padding-top: 70px;
+	font-weight: bold;
+	cursor: pointer;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+	border: 1px solid #ccc;
+	background-color: #f2f2f2;
+
+}
+@supports (display: flex) {
+	label {
+		padding: 0;
+	}
+}
+label.active {
+	color: #fff;
+	background-color: #11d636;
+}
+@media (max-width: 40em) {
+	label {
+		width: 33.33%;
+	}
+}
+
+input {
+	position: absolute;
+	top: 8px;
+	top: .5rem;
+	right: 8px;
+	right: .5rem;
+}
+input[type="checkbox"].hidden {
+	display: block;
+	opacity: 0;
+}
+input[type="checkbox"].hidden:focus {
+	opacity: 1;
+}
+
+#submit {
+	margin-top: 16px;
+	margin-top: 1rem;
+	position: static;
+	padding: 5px;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	border: 0;
+	background-color: #ec1559;
+}
+#submit:hover, #submit:focus {
+	background-color: #f25c8b;
+}
+
+#list {
+	position: relative;
+	float: right;
+	padding: 16px;
+	border: 1px solid #ccc;
+}
+#list.feedback::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: .5em 1em;
+	box-sizing: border-box;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	content: "";
+	pointer-events: none;
+	background-color: #ec1559;
+}
+#list.feedback.drag::after {
+	content: "+  DROP HERE";
+}
+#list.feedback.drop::after {
+	content: "RELEASE!";
+}
+#list h2, #list ul {
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+	pointer-events: none;
+}
+#list a {
+	display: block;
+	float: left;
+	margin-bottom: 16px;
+	margin-bottom: 1rem;
+	padding: 8px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #ec1559;
+}
+#list a:hover, #list a:focus {
+	background-color: #f25c8b;
+}
+#list ul {
+	clear: both;
+	text-transform: capitalize;
+}
+#list li {
+	margin-bottom: 8px;
+	margin-bottom: .5rem;
+}
+
+#secret {
+	width: 100%;
+}
+
+#feedback {
+	padding: 16px;
+	font-weight: bold;
+	line-height: 1.4;
+	color: #fff;
+	background-color: #ec1559;
+}
+
+.hidden {
+	display: none;
+}
