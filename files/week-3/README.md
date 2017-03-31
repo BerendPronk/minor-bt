@@ -120,4 +120,4 @@ With CSS I took care of the visual structure, setting it back to where it initia
 The prototype was tested on all but one of the available devices in the device-lab, located on our university.  
 The image below shows the result per device.
 
-![Device lab tests](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/dragndrop-devicelab.jpg)
+![Device lab tests](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/dragndrop-devicelab-2.jpg)
