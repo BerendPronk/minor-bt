@@ -18,5 +18,5 @@ https://github.com/BerendPronk/minor-bt/tree/master/files/week-2
 ---
 
 ## Week 3
-***Progressive Enhancement build on a drag 'n drop grocery list***
+***Progressive Enhancement build on a drag 'n drop grocery list***  
 https://github.com/BerendPronk/minor-bt/tree/master/files/week-3
