@@ -81,7 +81,7 @@ The JavaScript is written with selectors and functionalities available in every 
 ### Colour
 The prototype, besides the dark grey for the body text, uses two colours in it's interface: A bright-pink (Razzmatazz) and a bright-green colour. Even for people with any form of colourblindness would not have any trouble experiencing these colours, by intensity, contrast or saturation.
 
-![Colourblindness tests]()
+![Colourblindness tests](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/dragndrop-colourblindness.jpg)
 
 ### Internet connection
 This application is blazing-fast, mainly because it only conists of a to-do-list that's 'rendered' server-side.  
@@ -120,4 +120,4 @@ With CSS I took care of the visual structure, setting it back to where it initia
 The prototype was tested on all but one of the available devices in the device-lab, located on our university.  
 The image below shows the result per device.
 
-![Device lab tests]()
+![Device lab tests](https://raw.githubusercontent.com/BerendPronk/minor/master/assets/bt/dragndrop-devicelab.jpg)
