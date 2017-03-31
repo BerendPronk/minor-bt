@@ -1,5 +1,5 @@
 # Progressive Enhancement build on a drag 'n drop grocery list
-To improve on my knowledge of progressive enhancement and accessibility on the web, and to finish the [browser technologies](https://github.com/BerendPronk/minor-bt) course, I decided to create a prototype of a small application to add groceries. More specifically, to add groceries needed to make a grilled cheese sandwich.
+To improve on my knowledge of progressive enhancement and accessibility on the web, and to finish the [Browser Technologies](https://github.com/BerendPronk/minor-bt) course, I decided to create a prototype of a small application to add groceries. More specifically, to add groceries needed to make a grilled cheese sandwich.
 
 ## First steps
 If you want to give this prototype a try, feel free to do so! Type the following command in your terminal.
@@ -54,7 +54,7 @@ Almost every browser suppoorts it, but that doesn't mean the others should be ig
 ##### Desktop
 - [ ] < IE10
 - [x] IE10+
-- [x] Edge
+- [x] Microsoft Edge
 - [x] Google Chrome
 - [x] Mozilla Firefox (2.0)
 - [x] OSX Safari
@@ -71,21 +71,53 @@ Almost every browser suppoorts it, but that doesn't mean the others should be ig
 The specific functionality of the drag 'n drop feature doesn't need to be specified, but you can [take a look at the code](https://github.com/BerendPronk/minor-bt/blob/master/files/week-3/public/js/script.js).
 
 ## Accessibility report
-...
+Everything related to accessibility I learned during this [Browser Technologies](https://github.com/BerendPronk/minor-bt) course I applied to this prototype after testing it. Image-, font-, and storage-related aspects of accessibility are not represented in the current version of the prototype, so I did not run any tests on those topics.
 
 ### JavaScript
-...
+If users are unable to load the JavaScript-file, or if the `draggable` feature is not detected, they are presented with feedback on the top of the screen. This feedback will be hidden when the `draggable` feature is detected.
+
+The JavaScript is written with selectors and functionalities available in every browser supporting ECMAScript 2.
 
 ### Colour
-...
+The prototype, besides the dark grey for the body text, uses two colours in it's interface: A bright-pink (Razzmatazz) and a bright-green colour. Even for people with any form of colourblindness would not have any trouble experiencing these colours, by intensity, contrast or saturation.
+
+![Colourblindness tests]()
+
+### Internet connection
+This application is blazing-fast, mainly because it only conists of a to-do-list that's 'rendered' server-side.  
+On a Regular 2G connection (300ms, 250kb/s, 50kb/s) the entirety of the page was loaded in a mere `1.2 seconds`.
 
 ### Keyboard navigation
-...
+When the feature detection for draggable returns true, it runs a function to hide the checkboxes. However, this is not ideal for keyboard navigation, since the focus of those checkboxes will hide along with it.  
+I rewrote this after testing, showing the checkboxes when a focus is applied by either keyboard navigation or by checking the input element.
 
 ### Screenreader
+For this test I used the Chrome extention [ChromeVox](http://www.chromevox.com/). A very easy to use screenreader, in my opinion.  
+The HTML was well structured, it seemed at my first test. The only thing that I noticed was about semantics. Because of the layout of the page, the entire list of products was read before the actual to-do-list. This means that blind users of this prototype would've to listen to all the products before actually getting their wanted products read for them. There may be a way for blind users to skip entire nodelists in the DOM-structure, I have not tested that. I just thought it'd be better if the structure provides a pleasant en natural experience for every user.
+With CSS I took care of the visual structure, setting it back to where it initially was.
 
 ## Support
-...
+##### Desktop
+- [x] IE5+
+- [x] Microsoft Edge
+- [x] Google Chrome
+- [x] Mozilla Firefox
+- [x] OSX Safari
+- [x] Opera
+
+#### Mobile
+- [x] IE Mobile
+- [x] Android
+- [x] Chrome for Android
+- [x] Firefox Mobile
+- [x] iOS Safari
+- [x] Opera Mini
+
+#### E-reader
+- [x] Amazon Kindle Experimental Browser
 
 ### Device laboratory
-...
+The prototype was tested on all but one of the available devices in the device-lab, located on our university.  
+The image below shows the result per device.
+
+![Device lab tests]()
